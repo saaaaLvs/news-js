@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    position: relative;
+    background-color: #2D3250;
+}
+
+/* Global CSS */
+.obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: #7077A1;
+    box-shadow: 0 7px 10px rgba(0,0,0, 0.3);
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.navbar .logo {
+    color: #fff;
+    text-decoration: none;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+
+.navbar .logo:hover {
+    opacity: 85%;
+}
+
+#search-input{
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color:#333;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #2D3250;
+    border: 2px solid #2D3250;
+    font-size: 18px;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#search-button:hover{
+    opacity: 85%;
+}
+
+#blog-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+
+.blog-card {
+    width:280px;
+    border: 1px solid #2D3250;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+    background-color: #7077A1;
+}
+
+
+.blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+    color: whitesmoke;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.blog-card p {
+    color:rgba(255, 255, 255, 0.582);
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+.blog-card:hover{
+    box-shadow: 4px 4px 10px rgba(245, 244, 244, 0.377);
+}
+
+#logo {
+    height: 20%;
+    width: 20%;
+    margin-bottom: -1.2rem;
+    margin-right: 0.5rem;
+}
+
+.desc{
+    padding-top: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin:  0 18rem;
+}
+
+.search-heading {
+    text-align: center;
+    color: white;
+    margin-right: 50rem;
+    padding-right: 2rem;
+}
+
+
+@media(max-width: 500px) {
+    nav{
+        padding: 0 20px;
+    }
+    .navbar .logo {
+        font-size: 1.8rem;
+    }
+    #search-input {
+        width: 125px;
+        padding: 10px 10px;
+    }
+    .blog-card{
+        width: 100%;
+    }
+    #logo{
+       display: none;
+    }
+}
